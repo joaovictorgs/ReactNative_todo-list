@@ -29,4 +29,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingTop: 60,
   },
+  flatList: {
+    marginLeft: 42,
+    width: '100%',
+  },
 });

@@ -5,12 +5,13 @@ export const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     width: '90%',
-    height: 40,
+    height: 50,
     backgroundColor: Colors.gray[500],
     justifyContent: 'space-between',
     alignItems: 'center',
     borderBlockColor: Colors.gray[400],
     borderRadius: 5,
+    marginBottom: 10,
   },
   checkIcon: {
     padding: 10,

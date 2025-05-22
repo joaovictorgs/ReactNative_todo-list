@@ -5,9 +5,10 @@ import { use, useState } from 'react';
 
 type Props = {
   taskText: string;
+  deleteTask: (text: string) => void;
 };
 
-export function Task({ taskText }: Props) {
+export function Task({ taskText, deleteTask }: Props) {
   const [isDone, setIsDone] = useState(false);
   const [addHovered, setAddHovered] = useState(false);
   const [trashHovered, setTrashHovered] = useState(false);
@@ -40,7 +41,7 @@ export function Task({ taskText }: Props) {
       )}
       {<Text style={isDone ? styles.textContentDone : styles.textContent}> {taskText}</Text>}
       <TouchableOpacity
-        onPress={() => console.log('apagar')}
+        onPress={() => deleteTask(taskText)}
         onPressIn={() => setTrashHovered(true)}
         onPressOut={() => setTrashHovered(false)}
         activeOpacity={1}
