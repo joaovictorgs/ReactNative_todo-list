@@ -1,17 +1,17 @@
-import { StyleSheet } from 'react-native';
-import { Colors } from '../../styles/colors';
+import { StyleSheet } from "react-native";
+import { Colors } from "../../styles/colors";
 
 export const styles = StyleSheet.create({
   container: {
-    flexDirection: 'row',
-    width: '90%',
+    flexDirection: "row",
+    width: "90%",
     height: 50,
     backgroundColor: Colors.gray[500],
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    justifyContent: "space-between",
+    alignItems: "center",
     borderBlockColor: Colors.gray[400],
     borderRadius: 5,
-    marginBottom: 10,
+    marginTop: 10,
   },
   checkIcon: {
     padding: 10,
@@ -30,8 +30,8 @@ export const styles = StyleSheet.create({
     height: 20,
     borderRadius: 20,
     backgroundColor: Colors.blue[200],
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   doneCheckIconBoxHovered: {
     marginHorizontal: 10,
@@ -39,8 +39,8 @@ export const styles = StyleSheet.create({
     height: 20,
     borderRadius: 20,
     backgroundColor: Colors.blue[100],
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   deleteIcon: {
@@ -56,7 +56,7 @@ export const styles = StyleSheet.create({
     color: Colors.gray[100],
   },
   textContentDone: {
-    textDecorationLine: 'line-through',
+    textDecorationLine: "line-through",
     padding: 10,
     color: Colors.gray[300],
   },
